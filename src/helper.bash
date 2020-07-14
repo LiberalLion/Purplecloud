@@ -17,7 +17,7 @@
 _helper_printUsage() {
     local usage
 
-    usage="\e[1m\e[31mUsage: $(basename "$0") [OPTIONS]\e[0m
+   usage="Usage: $(basename "$0") [OPTIONS]
 
     Conrol local pentest lab.
 

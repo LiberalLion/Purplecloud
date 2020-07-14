@@ -1,4 +1,11 @@
+.PHONY: test lint
+
+all: lint test
+
 lint: shellcheck yamllint
+
+test:
+	bats test
 
 shellcheck:
 	docker container run --rm -it -v $(shell pwd):/mnt koalaman/shellcheck\
